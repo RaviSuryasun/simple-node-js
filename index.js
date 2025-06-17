@@ -50,4 +50,7 @@ app.get('/index', (req,response) =>{
 });
 
 //port
-app.listen(3000, console.log("Listening at port 3000..."))
+
+app.listen(3000, '0.0.0.0', () => {
+  console.log('Server is running...');
+});
